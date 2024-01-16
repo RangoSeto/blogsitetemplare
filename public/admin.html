@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Site</title>
+
+<!--    tailwind css1-->
+    <link href="./tailwind.css" rel="stylesheet" type="text/css" />
+<!--    fontawesome css1-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="flex flex-col h-screen overflow-hidden">
+
+<!--    Start Nav bar-->
+    <nav class="w-full py-4 bg-[#f4f4f4] shadow">
+        <div class="container flex justify-between items-center mx-auto">
+
+            <div>
+                <a href="#" class="text-3xl font-bold uppercase">Blogr</a>
+            </div>
+
+<!--            <div class="flex bg-gray-200 rounded-xl px-8 py-2">-->
+<!--                <span class=""><i class="fas fa-search text-lg text-gray-500"></i></span>-->
+<!--                <input type="text" id="search" class="bg-gray-200 px-4 focus:outline-none btn-searchs" placeholder="Search posts..." />-->
+<!--            </div>-->
+
+            <div class="flex justify-center items-center">
+<!--                <span class="w-6 h-6 border-2 border-cyan-900 rounded-full flex justify-center items-center hover:cursor-pointer me-8"><i class="fas fa-question text-sm"></i></span>-->
+                <span class="text-gray-600 me-3">Admin</span>
+                <img src="./assets/img/users/user3.jpg" alt="user" class="w-10 h-10 rounded-full hover:cursor-pointer me-5" />
+                <a href="javascript:void(0);" class="bg-blue-900 text-white rounded-md transition-all duration-100 hover:bg-blue-700 px-5 py-2">Logout</a>
+            </div>
+
+        </div>
+
+
+    </nav>
+<!--    End Nav bar-->
+
+<!--    Start body section-->
+    <section class="w-full flex ">
+        <div class="w-1/4 min-h-screen relative px-3 bg-[#f4f4f4] shadow">
+
+            <div class="pt-5">
+                <div class="flex justify-center items-center bg-white text-blue-900 border-2 border-blue-900 py-2 transition-all duration-100 hover:bg-blue-200 hover:text-black hover:border-white">
+                    <a href="#"><i class="fas fa-plus me-3"></i>New Post</a>
+                </div>
+            </div>
+
+            <div class="w-full text-blue-900 py-8 border-b-2 border-b-gray-300">
+                <div class="w-full text-md leading-3 transition-all duration-100 hover:bg-white hover:cursor-pointer">
+                    <p class="px-8 py-4"><i class="fas fa-file-alt text-md me-3"></i> Posts</p>
+                </div>
+
+                <div class="w-full text-blue-900 text-md leading-3 transition-all duration-100 hover:bg-white hover:cursor-pointer">
+                    <p class="px-8 py-4"><i class="far fa-chart-bar text-md me-3"></i> Stats</p>
+                </div>
+
+                <div class="w-full text-blue-900 text-md leading-3 transition-all duration-100 hover:bg-white hover:cursor-pointer">
+                    <p class="px-8 py-4"><i class="far fa-comments text-md me-3"></i> Comments</p>
+                </div>
+            </div>
+
+            <div class="w-full text-md text-blue-900 leading-3 mt-4 transition-all duration-100 hover:bg-stone-50 hover:cursor-pointer">
+                <p class="px-8 py-4 text-blue-500 hover:underline hover:underline-offset-4"><i class="fas fa-external-link-alt me-3"></i> View Blogs</p>
+            </div>
+
+            <div class="w-full flex justify-center items-center absolute left-0 bottom-28 ">
+                <img src="./assets/img/illu/userillu1.png" alt="illustsration1" width="170px" />
+            </div>
+
+        </div>
+
+        <div class="w-3/4 px-12 h-screen overflow-y-scroll py-8">
+
+<!--            Start Search Section-->
+            <div class="w-full bg-white flex justify-between sticky top-0">
+                <form action="">
+                    <select name="filter" id="filter" class="px-12 bg-white focus:border-none focus:outline-none hover:bg-gray-200 px-8 py-2">
+                        <option value="1">All</option>
+                    </select>
+                </form>
+
+                <div class="flex bg-gray-200 rounded-xl px-5 py-1">
+                    <span class=""><i class="fas fa-search text-md text-gray-500"></i></span>
+                    <input type="text" id="search" class="bg-gray-200 focus:outline-none px-3 btn-searchs" placeholder="Search posts..." />
+                </div>
+            </div>
+<!--            End Search Section-->
+
+<!--            Start Post Show Section-->
+            <div class="my-8">
+
+                <div class="flex justify-between items-center border border-blue-200 p-5 hover:bg-blue-50 group mb-3">
+                    <div class="flex items-center">
+                        <img src="https://source.unsplash.com/100x70/?1" alt="post1" />
+                        <div class="ps-5">
+                            <p class="group-hover:underline pb-3">Is Social Media a Reliable Source of News?</p>
+                            <p class="text-sm text-gray-500">Publish : Jan 13</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-sm text-gray-500 me-5">Admin</span>
+                        <img src="./assets/img/users/user3.jpg" alt="user" class="w-10 h-10 rounded-full hover:cursor-pointer me-5" />
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center border border-blue-200 p-5 hover:bg-blue-50 group mb-3">
+                    <div class="flex items-center">
+                        <img src="https://source.unsplash.com/100x70/?1" alt="post1" />
+                        <div class="ps-5">
+                            <p class="group-hover:underline pb-3">Is Social Media a Reliable Source of News?</p>
+                            <p class="text-sm text-gray-500">Publish : Jan 13</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-sm text-gray-500 me-5">Admin</span>
+                        <img src="./assets/img/users/user3.jpg" alt="user" class="w-10 h-10 rounded-full hover:cursor-pointer me-5" />
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center border border-blue-200 p-5 hover:bg-blue-50 group mb-3">
+                    <div class="flex items-center">
+                        <img src="https://source.unsplash.com/100x70/?1" alt="post1" />
+                        <div class="ps-5">
+                            <p class="group-hover:underline pb-3">Is Social Media a Reliable Source of News?</p>
+                            <p class="text-sm text-gray-500">Publish : Jan 13</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-sm text-gray-500 me-5">Admin</span>
+                        <img src="./assets/img/users/user3.jpg" alt="user" class="w-10 h-10 rounded-full hover:cursor-pointer me-5" />
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center border border-blue-200 p-5 hover:bg-blue-50 group mb-3">
+                    <div class="flex items-center">
+                        <img src="https://source.unsplash.com/100x70/?1" alt="post1" />
+                        <div class="ps-5">
+                            <p class="group-hover:underline pb-3">Is Social Media a Reliable Source of News?</p>
+                            <p class="text-sm text-gray-500">Publish : Jan 13</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-sm text-gray-500 me-5">Admin</span>
+                        <img src="./assets/img/users/user3.jpg" alt="user" class="w-10 h-10 rounded-full hover:cursor-pointer me-5" />
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center border border-blue-200 p-5 hover:bg-blue-50 group mb-3">
+                    <div class="flex items-center">
+                        <img src="https://source.unsplash.com/100x70/?1" alt="post1" />
+                        <div class="ps-5">
+                            <p class="group-hover:underline pb-3">Is Social Media a Reliable Source of News?</p>
+                            <p class="text-sm text-gray-500">Publish : Jan 13</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-sm text-gray-500 me-5">Admin</span>
+                        <img src="./assets/img/users/user3.jpg" alt="user" class="w-10 h-10 rounded-full hover:cursor-pointer me-5" />
+                    </div>
+                </div>
+
+            </div>
+<!--            End Post Show Section    -->
+
+        </div>
+    </section>
+<!--    End body section-->
+
+</body>
+</html>
